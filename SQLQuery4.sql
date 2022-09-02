@@ -6,7 +6,7 @@ create table employee_tb3
  EmpNo int Primary key,
  Ename Varchar(20) NOT NULL,
  Job  VARCHAR(20), 
- Salary int check(Salary>0),
+ Salary int check(SALARY>0),
  DeptNo int REFERENCES Departments(DeptNo));
 
  insert into employee_tb3 values(7001,'Sandeeep','Analyst',25000,10)
